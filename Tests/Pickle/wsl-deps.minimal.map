@@ -1,0 +1,10 @@
+# Pass "minimal": the four hard dependencies of About.xml, the test companion for def fields, nothing else.
+# Harmony, [NL] Facial Animation, [NL] Facial Animation - Experimentals, Vanilla Textures Expanded - [NL] Facial Animation.
+# THE ORDER OF THE LINES IS THE LOAD ORDER: the staging activates the mod under test after every mod of the map.
+# The original (sd.fa.movingvanillaeyes) must NOT be in this map: it is declared incompatible.
+brrainz.harmony 2009463077
+Nals.FacialAnimation 1635901197
+nals.facialanimationexperimentals 2581693737
+VanillaExpanded.VTEXE.FacialAnims 2816938779
+nelim.pickletools.deffields     path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod

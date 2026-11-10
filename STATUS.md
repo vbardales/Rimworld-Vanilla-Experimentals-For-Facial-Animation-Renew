@@ -5,7 +5,7 @@ repo: Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew
 remote: https://github.com/vbardales/Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-11-10: no licence file or mention in Workshop 3753978140 (SunshineyDays, modVersion 2.3.4, declares 1.6 only); owner decision: author counts as dead, so public with named credit and a withdrawal clause"
 upstream_mod_remotes: N/A
@@ -27,9 +27,10 @@ remaining:
   - "2026-11-10: defect: 5.d no hidden MainButtons shortcut (the original has no MainButtonDef; adding one needs C#, and the mod ships no source, only MovingVanillaEyes.dll). Needs a decision: new small assembly under Source/ or a justified exception, to ask Virginie at playTests"
   - "2026-11-10: unverified: 5.e/5.f in-game checks (defaults, dependent controls such as eye movement vs new eye textures, restart notice with the Performance Patch, persistence, logs): playTests; defaults not read from the DLL"
   - "2026-11-10: ChatGPT review applied (4 keys: effet de chaud became effet de chaleur; PUBLICATION.md not written yet, not reviewable). 6.g French review validated by Virginie 2026-11-10 at 055987e. unverified: texts hard-coded in the DLL are unknown (no source), and no raw-key or clipping check before playTests"
+  - "2026-11-10: unverified: writeTests done, nothing run: TESTING.md, Tests/Pickle (2 features, 3 scenarios, wsl-deps.minimal.map, Check-Steps OK: every line resolves to one step). Next: ticket pass minimal on 1.6 via the TM (file-pickle-ticket), then the 1.7 ticket (map wsl-deps.sanctuary-fa17.map, scenario sanctuary-nelim-check, SaB files it). Assumptions to confirm: type name FacialAnimation.EyeballTypeDef, absent altMaskPath reads empty. Settings options (12) have no Pickle step to set them: ask NPT at playTests. No local script, no row in LOCAL_SCRIPTS.md"
 session: local_aabdd426-e7d3-4243-a0ef-9934927042f9
 updated: 2026-11-10
-protocols_read_sha: 6ea7e656db3431b3945a03139af0d8a34cc1584d
+protocols_read_sha: 3bf77796802dc6d5fd501376be3c22bc53c5a4ff
 ---
 
 # Vanilla Experimentals for Facial Animation Renew (unofficial): status
