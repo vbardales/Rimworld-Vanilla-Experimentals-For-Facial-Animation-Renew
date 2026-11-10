@@ -5,11 +5,11 @@ repo: Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew
 remote: https://github.com/vbardales/Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew.git
 visibility: public
 detached: yes
-workflow_stage: settings[1.0.0]
+workflow_stage: localize[1.0.0]
 licence: silent
 licence_at: "2026-11-10: no licence file or mention in Workshop 3753978140 (SunshineyDays, modVersion 2.3.4, declares 1.6 only); owner decision: author counts as dead, so public with named credit and a withdrawal clause"
 upstream_mod_remotes: N/A
-settings_audit: unchecked
+settings_audit: partial
 localization: unchecked
 translation_en: unchecked
 translation_fr: unchecked
@@ -24,6 +24,8 @@ remaining:
   - "2026-11-10: unverified: 1.7 fix written (success=Always on the altMaskPath removal), unplayed. On 1.7 `1.6/Patches/PatchBase_Experimentals_Parts.xml` fails (PatchOperationSequence of 17 operations dropped; its PatchOperationRemove of Defs/FacialAnimation.EyeballTypeDef[defName=EyeNormal]/altMaskPath fails; same set on 1.6 has no such error; evidence SanctuaryBacklot/Tests/Pickle/Inbox/fa17-load/stdout.txt line 1527). Next, at playTests: a 1.7 ticket through the TM (map wsl-deps.sanctuary-fa17.map, scenario sanctuary-nelim-check, SaB files it). Do not declare 1.7 before a green 1.7 run"
   - "2026-11-10: unverified: 2.a Art/ModIcon-source.png absent (owner source, nothing created); no Mod/About/ModIcon.png and no Preview.png (the original's are not carried over; icon is the mascot, Preview comes at mountPreview)"
   - "2026-11-10: unverified: original ships an AssetBundle (Mod/AssetBundles, 7.8 MB); 1.7 has no AssetBundles (Assets.zip, -BakeModAssetPacks), to settle at the 1.7 pass; two DLLs without source (MovingVanillaEyes.dll, Mods/CharacterEditor/Assemblies/MoreHeadShapes.dll)"
+  - "2026-11-10: defect: 5.d no hidden MainButtons shortcut (the original has no MainButtonDef; adding one needs C#, and the mod ships no source, only MovingVanillaEyes.dll). Needs a decision: new small assembly under Source/ or a justified exception, to ask Virginie at playTests"
+  - "2026-11-10: unverified: 5.e/5.f in-game checks (defaults, dependent controls such as eye movement vs new eye textures, restart notice with the Performance Patch, persistence, logs): playTests; defaults not read from the DLL"
 session: local_aabdd426-e7d3-4243-a0ef-9934927042f9
 updated: 2026-11-10
 protocols_read_sha: f5c8838a968efde397966e68448ae0370d336d25
@@ -33,3 +35,14 @@ protocols_read_sha: f5c8838a968efde397966e68448ae0370d336d25
 
 Current state only: the front matter above is the source of truth, run lines go to `docs/runs/`.
 Check it with `scripts/Check-Status.ps1 -Mod <Folder>` (no ERROR) before the commit that leaves the monorepo.
+
+## Settings audit
+
+2026-11-10, revision of the first push plus the dependency commit, `Mod/` as copied from Workshop 3753978140 (2.3.4), no source: inspection of the metadata strings of `Mod/1.6/Assemblies/MovingVanillaEyes.dll` and of `Mod/Languages/English/Keyed/MovingVanillaEyes_Settings.xml`. Nothing was run in game.
+
+- **Access (5.c):** `MovingVanillaEyesMod` (a `Mod`) draws `DoSettingsWindowContents`; category key `MVE_Settings_Category`, so Mod options, Vanilla Experimentals for Facial Animation. A `ModSettings` class persists the values with `Scribe_Values` (global, one file).
+- **Options (5.a), twelve, each with label and tooltip keys:** ExperimentalEyeTextures, EyeMovement, RandomEyeColors, VanillaNarrowHeads (inverted: "Disable narrow head fix"), MoreRetexturedHeads, BlushLimiting, HalfLiddedEyes, Tears, TemperatureOverlays, SickHotOverlay, EmotiveMouths, DisableGloomyFlee. They drive `PatchOperationIfSettingTrue` / `IfSettingFalse` in the patch files and runtime checks in the assembly; each has a concrete use, none is decorative.
+- **Timing (5.e):** a restart notice exists (`MVE_Settings_RestartRequiredLabel`, and a notice when the Facial Animation Performance Patch is active: changes apply after a restart). Patch-driven options are read at load, so they apply after a restart.
+- **Shortcut (5.d):** absent. See `remaining`.
+- **Translation readiness:** all displayed text goes through `MVE_Settings_*` keys; only `Languages/English` exists, no French yet.
+- **Decision:** `settings_audit: partial`. Analysis done; no automated test exists for this mod yet; in-game checks (5.f) wait for playTests.
