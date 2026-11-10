@@ -20,7 +20,8 @@
         <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/texPath</xpath>
         <value><texPath>Things/Pawn/Humanlike/Eyes/Normal</texPath></value>
       </li>
-      <li Class="PatchOperationRemove">
+      <!-- success="Always": on RimWorld 1.7 this node is absent, and a failed removal dropped the whole sequence. -->
+      <li Class="PatchOperationRemove" success="Always">
         <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/altMaskPath</xpath>
       </li>
       <li Class="PatchOperationReplace">

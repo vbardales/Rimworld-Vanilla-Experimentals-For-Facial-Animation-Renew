@@ -31,12 +31,12 @@ Those two mods stay required for their textures to show.
 
 ## What was changed
 
-Nothing in the files yet. The reason for the Renew: on RimWorld 1.7 the patch file
+One patch change. The reason for the Renew: on RimWorld 1.7 the patch file
 `1.6/Patches/PatchBase_Experimentals_Parts.xml` fails. Its `PatchOperationSequence` of 17
 operations is dropped because the `PatchOperationRemove` on
 `Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/altMaskPath` finds no node. The same set
-on 1.6 has no such error. Planned fix: make that removal tolerant. Nothing is declared for 1.7
-until a 1.7 run is green.
+on 1.6 has no such error. That removal now carries `success="Always"`, so a missing node no longer
+drops the sequence. Not yet run on 1.7, and nothing is declared for 1.7 until a 1.7 run is green.
 
 | Point | Decision |
 |---|---|

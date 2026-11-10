@@ -20,8 +20,7 @@ First release of the adaptation of SunshineyDays' **Vanilla Experimentals for Fa
   `sd.fa.movingvanillaeyes`. Mod settings start fresh.
 - Name, author line, `<url>` and description carry the Renew and unofficial notices.
 
-### Planned
-
-- Make the `PatchOperationRemove` on the `EyeNormal` `altMaskPath` in
-  `1.6/Patches/PatchBase_Experimentals_Parts.xml` tolerant, so the 17-operation sequence is no
-  longer dropped on RimWorld 1.7. Not declared for 1.7 before a green 1.7 run.
+- The `PatchOperationRemove` on the `EyeNormal` `altMaskPath` in
+  `1.6/Patches/PatchBase_Experimentals_Parts.xml` carries `success="Always"`, so a missing node no
+  longer drops the 17-operation sequence on RimWorld 1.7. Not declared for 1.7 before a green 1.7
+  run.
