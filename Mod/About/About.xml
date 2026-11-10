@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Experimentals for Facial Animation Renew (unofficial)</name>
+  <author>SunshineyDays - 1.6 adapted by Nelim</author>
+  <packageId>nelim.vanillaexperimentalsforfacialanimation</packageId>
+  <url>https://github.com/vbardales/Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <incompatibleWith>
+    <li>sd.fa.movingvanillaeyes</li>
+  </incompatibleWith>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>nals.facialanimation</packageId>
+      <displayName>[NL] Facial Animation - WIP</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>nals.facialanimationexperimentals</packageId>
+      <displayName>[NL] Facial Animation - Experimentals</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>vanillaexpanded.vtexe.facialanims</packageId>
+      <displayName>Vanilla Textures Expanded - [NL] Facial Animation</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2816938779</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>nals.facialanimation</li>
+    <li>nals.facialanimationexperimentals</li>
+    <li>vanillaexpanded.vtexe.facialanims</li>
+    <li>reel.facialanims</li>
+    <li>ferny.nomouths</li>
+    <li>lucius.eyegenes3</li>
+    <li>oppey.eyegenes2</li>
+    <li>sd.fa.geneticheadsanomaly</li>
+  </loadAfter>
+  <loadBefore>
+    <li>astryl.FacialAnimationPerformancePatch</li>
+  </loadBefore>
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Adaptation of SunshineyDays' Vanilla Experimentals for Facial Animation (2.3.4) to the latest RimWorld version. I am not the author of this mod: the eyes, the textures, the patches and the settings are SunshineyDays' work, and what I add is the upkeep. Credit goes to them; mistakes in the adaptation are mine.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140
+
+All parts optional by mod setting! Pick and choose what parts make your game more fun!
+
+Vanilla-style moving eyes and additional features inspired by [NL] Facial Animation Experimentals:
+- half-lidded expressions for tiredness,
+- tears for pain,
+- hot and cold overlays,
+- gloomy and cheerful overlays,
+- and smiles and frown for most mouths.
+
+Requires [NL] Facial Animation - Experimentals. Does not use every feature added by that mod.
+
+Includes SunshineyDays' More and Retextured Head Shapes, VTE placement adjustments, and Reel's placement adjustments (if Reel's Facial Animation mod is present) all in one convenient package. EyeGenes compatibility as well.
+
+The only textures original to SunshineyDays are Thick Lids and Short Lids. The rest are adapted from VTE and Reel's excellent mods, which are required for those textures to show up.
+
+Do not run it alongside the original mod: it is declared incompatible, because both carry the same patches.
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+[url=https://github.com/vbardales/Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew]Source code on GitHub[/url]</description>
+</ModMetaData>

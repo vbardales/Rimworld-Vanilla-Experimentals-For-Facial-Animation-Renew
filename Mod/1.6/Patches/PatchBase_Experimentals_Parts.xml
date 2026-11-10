@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Keep VTE's removals and vanilla/VTE part set while taking feature defs from Experimentals. -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.BrowTypeDef[defName="BrowThick" or defName="BrowTanuki"] | Defs/FacialAnimation.EyeballTypeDef[defName="EyeSanpaku" or defName="EyeDragon"] | Defs/FacialAnimation.LidTypeDef[defName="LidSharp" or defName="LidGeek"] | Defs/FacialAnimation.MouthTypeDef[defName="MouthFang" or defName="MouthShark"] | Defs/FacialAnimation.SkinTypeDef[defName="SkinFreckled" or defName="SkinFreckledCheek"]</xpath>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.MouthShapeDef[defName="tight" or defName="surprise" or defName="puzzle"] | Defs/FacialAnimation.FaceAnimationDef[defName="NLR-Tight" or defName="NLR-Surprise" or defName="NLR-Puzzle"]</xpath>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.BrowTypeDef[defName="BrowNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Brows/Normal</texPath></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Eyes/Normal</texPath></value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/altMaskPath</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal"]/shader</xpath>
+        <value><shader>Map/CutoutComplex</shader></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.HeadTypeDef[defName="HeadNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Heads_Blank/Normal</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.HeadTypeDef[defName="HeadPointy"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Heads_Blank/Pointy</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.HeadTypeDef[defName="HeadSquare"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Heads_Blank/Square</texPath></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.LidTypeDef[defName="LidNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Lids/Normal</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.MouthTypeDef[defName="MouthNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Mouth/Normal</texPath></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.SkinTypeDef[defName="SkinNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Skins/Normal</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.SkinTypeDef[defName="SkinRightEye"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Skins/RightEye</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.SkinTypeDef[defName="SkinLeftChin"]/texPath</xpath>
+        <value><texPath>Things/Pawn/Humanlike/Skins/LeftChin</texPath></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.EmotionTypeDef[defName="EmotionNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/VanillaExperimental/Emotions/Normal</texPath></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.LidOptionTypeDef[defName="LidOptionNormal"]/texPath</xpath>
+        <value><texPath>Things/Pawn/VanillaExperimental/LidOptions/Normal</texPath></value>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FacialAnimation.LidShapeDef[defName="half"]/altShapeDef</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/FacialAnimation.LidShapeDef[defName="half"]/altShapeDef</xpath>
+          <value><altShapeDef>normal</altShapeDef></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/FacialAnimation.LidShapeDef[defName="half"]</xpath>
+          <value><altShapeDef>normal</altShapeDef></value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

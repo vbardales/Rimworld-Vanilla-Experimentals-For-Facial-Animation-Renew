@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+    <settingName>enableBlushLimiting</settingName>
+    <operation Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="Thought_Naked"]/targetThoughtDefs/li[.="Naked"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="RemoveApparel" or defName="RemoveApparel2" or defName="RemoveApparel3" or defName="Strip" or defName="Strip2" or defName="Strip3" or defName="Wear" or defName="Wear2" or defName="Wear3"]</xpath>
+        </li>
+      </operations>
+    </operation>
+  </Operation>
+
+  <Operation Class="MovingVanillaEyes.PatchOperationIfSettingFalse">
+    <settingName>enableEmotiveMouths</settingName>
+    <operation Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.FaceAnimationDef[.//mouthShapeDef="smile" or .//mouthShapeDef="sad"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.FaceAnimationDef[.//emotionShapeDef="cheerful" or .//emotionShapeDef="gloomy"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.MouthShapeDef[defName="smile" or defName="sad"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.EmotionShapeDef[defName="cheerful" or defName="gloomy"]</xpath>
+        </li>
+      </operations>
+    </operation>
+  </Operation>
+</Patch>

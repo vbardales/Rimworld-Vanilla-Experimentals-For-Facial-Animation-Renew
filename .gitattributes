@@ -1,0 +1,9 @@
+# Normalise line endings in the repository, leaving each machine its own.
+* text=auto
+
+*.xml  text
+*.md   text
+
+# Binaries: neither normalised nor diffed as text.
+*.png binary
+*.jpg binary

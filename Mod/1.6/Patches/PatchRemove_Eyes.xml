@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+        <li>EyeGenes3</li>
+        </mods>
+        <match Class="PatchOperationSequence"> 
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Android"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Android"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Anger"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Anger"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Awkward"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Awkward"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Disappointed"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Disappointed"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Irritated"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Irritated"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Moody"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Moody"]</xpath>
+                    </match>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Staredown"]</xpath>
+                    <match Class="PatchOperationRemove">
+                        <xpath>Defs/FacialAnimation.EyeballTypeDef[defName = "Staredown"]</xpath>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

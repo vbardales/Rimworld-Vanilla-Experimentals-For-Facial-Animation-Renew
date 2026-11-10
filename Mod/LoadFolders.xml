@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <!-- Listed before 1.6 so this folder's patches run after the base 1.6 patches
+    ...why does it need to be reversed though...? -->
+    <li IfModActive="ferny.nomouths">Mods/NoMouths</li>
+    <li>1.6</li>
+    <li IfModActive="void.charactereditor">Mods/CharacterEditor</li>
+  </v1.6>
+</loadFolders>

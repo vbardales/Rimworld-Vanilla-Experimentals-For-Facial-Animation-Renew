@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Apply this mod's behavior as deltas over Experimentals' animation defs. -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving"]/animationFrames/li/duration</xpath>
+        <value><duration>60</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving"]/animationFrames/li/eyeballOffset</xpath>
+        <value><eyeballOffset>(-0.005,0,0)</eyeballOffset></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving"]/roopIntervalMin</xpath>
+        <value><roopIntervalMin>100</roopIntervalMin></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving2"]/animationFrames/li/duration</xpath>
+        <value><duration>60</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving2"]/animationFrames/li/eyeballOffset</xpath>
+        <value><eyeballOffset>(0.005,0,0)</eyeballOffset></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeMoving2"]/roopIntervalMin</xpath>
+        <value><roopIntervalMin>100</roopIntervalMin></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="eyeFlicker"]/animationFrames/li/duration</xpath>
+        <value><duration>12</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="blink"]/roopIntervalMin</xpath>
+        <value><roopIntervalMin>100</roopIntervalMin></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodCheerful"]/targetMoodMin</xpath>
+        <value><targetMoodMin>0.90</targetMoodMin></value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodGloomy" or defName="moodHopeless" or defName="moodHopeless3"]/targetMoodMin | Defs/FacialAnimation.FaceAnimationDef[defName="moodGloomy" or defName="moodHopeless" or defName="moodHopeless3"]/targetMoodMax</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodHopeless"]/animationFrames/li/browShapeDef | Defs/FacialAnimation.FaceAnimationDef[defName="moodHopeless2"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodGloomy"]</xpath>
+        <value>
+          <modExtensions>
+            <li Class="MovingVanillaEyes.BreakRiskAnimationExtension">
+              <minimumBreakRisk>Minor</minimumBreakRisk>
+              <maximumBreakRisk>Extreme</maximumBreakRisk>
+            </li>
+          </modExtensions>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodHopeless"]</xpath>
+        <value>
+          <modExtensions>
+            <li Class="MovingVanillaEyes.BreakRiskAnimationExtension">
+              <minimumBreakRisk>Extreme</minimumBreakRisk>
+              <maximumBreakRisk>Extreme</maximumBreakRisk>
+            </li>
+          </modExtensions>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="moodHopeless3"]</xpath>
+        <value>
+          <modExtensions>
+            <li Class="MovingVanillaEyes.BreakRiskAnimationExtension">
+              <minimumBreakRisk>Major</minimumBreakRisk>
+              <maximumBreakRisk>Extreme</maximumBreakRisk>
+            </li>
+          </modExtensions>
+        </value>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="Thought_Cold"]/targetThoughtDefs/li[.="Sick"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <FacialAnimation.FaceAnimationDef>
+            <defName>Thought_Tired</defName>
+            <animationFrames>
+              <li>
+                <duration>1</duration>
+                <lidShapeDef>half</lidShapeDef>
+              </li>
+            </animationFrames>
+            <priority>10000</priority>
+            <targetThoughtDefs>
+              <li>NeedRest</li>
+            </targetThoughtDefs>
+          </FacialAnimation.FaceAnimationDef>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="AttackMelee2" or defName="AttackStatic2" or defName="Goto"]/animationFrames/li/mouthShapeDef</xpath>
+        <value><mouthShapeDef>sad</mouthShapeDef></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="FleeAndCower"]/animationFrames/li/mouthShapeDef | Defs/FacialAnimation.FaceAnimationDef[defName="Strip2"]/animationFrames/li/mouthShapeDef[.="puzzle"]</xpath>
+        <value><mouthShapeDef>open</mouthShapeDef></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="Reading"]/animationFrames/li[1]/lidOffset</xpath>
+        <value>
+          <lidShapeDef>half</lidShapeDef>
+          <lidOffset>(0,0,-0.00125)</lidOffset>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="Wait_Downed"]/animationFrames/li/mouthShapeDef[.="surprise"]</xpath>
+        <value><mouthShapeDef>open</mouthShapeDef></value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <!-- The C# status filter selects this still pose only while a pawn's
+          Wait_Downed job coincides with an inability to be awake. -->
+          <FacialAnimation.FaceAnimationDef>
+            <defName>MVE_UnconsciousDowned</defName>
+            <animationFrames>
+              <li>
+                <duration>1</duration>
+                <browShapeDef>flat</browShapeDef>
+                <lidShapeDef>close</lidShapeDef>
+                <mouthShapeDef>normal</mouthShapeDef>
+              </li>
+            </animationFrames>
+            <roopIntervalMin>0</roopIntervalMin>
+            <roopIntervalMax>0</roopIntervalMax>
+            <targetJobs>
+              <li>Wait_Downed</li>
+            </targetJobs>
+            <priority>10000</priority>
+            <applyWhenStandingOnly>true</applyWhenStandingOnly>
+          </FacialAnimation.FaceAnimationDef>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="WaitCombat"]/animationFrames/li/mouthShapeDef[.="tight"] | Defs/FacialAnimation.FaceAnimationDef[defName="Wait_Combat_Rare"]/animationFrames/li/mouthShapeDef[.="normal"]</xpath>
+        <value><mouthShapeDef>sad</mouthShapeDef></value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="Lovin2"]/animationFrames/li[position()=1 or position()=2]/browShapeDef</xpath>
+        <value><browShapeDef>normal</browShapeDef></value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+          <FacialAnimation.FaceAnimationDef>
+            <defName>Lovin3</defName>
+            <animationFrames>
+              <li>
+                <duration>240</duration>
+                <browShapeDef>normal</browShapeDef>
+                <headShapeDef>blush</headShapeDef>
+                <lidShapeDef>half</lidShapeDef>
+              </li>
+              <li>
+                <duration>240</duration>
+                <browShapeDef>s-shaped</browShapeDef>
+                <eyeballOffset>0,0,-0.03</eyeballOffset>
+                <headShapeDef>blush</headShapeDef>
+                <lidShapeDef>half</lidShapeDef>
+              </li>
+              <li>
+                <duration>240</duration>
+                <browShapeDef>angled</browShapeDef>
+                <mouthShapeDef>open</mouthShapeDef>
+                <headShapeDef>blush</headShapeDef>
+                <lidShapeDef>close</lidShapeDef>
+              </li>
+              <li>
+                <duration>240</duration>
+                <browShapeDef>normal</browShapeDef>
+                <eyeballOffset>0,0,0.002</eyeballOffset>
+                <eyeballOffsetL>+0.0025,0,0</eyeballOffsetL>
+                <eyeballOffsetR>-0.0025,0,0</eyeballOffsetR>
+                <headShapeDef>blush</headShapeDef>
+                <lidShapeDef>half</lidShapeDef>
+              </li>
+            </animationFrames>
+            <roopIntervalMin>0</roopIntervalMin>
+            <roopIntervalMax>0</roopIntervalMax>
+            <applyWhenStandingOnly>true</applyWhenStandingOnly>
+            <targetJobs>
+              <li>Lovin</li>
+              <li>MLI_Jobs_MassLoveIn</li>
+              <li>MLI_Jobs_SingleLoveIn</li>
+            </targetJobs>
+            <priority>10400</priority>
+          </FacialAnimation.FaceAnimationDef>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="ReceivedAnAttack01"]/animationFrames/li[position()=1 or position()=12]/duration</xpath>
+        <value><duration>15</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="ReceivedAnAttack01"]/animationFrames/li[position()=2 or position()=4 or position()=5 or position()=6 or position()=7 or position()=8 or position()=9 or position()=11]/duration</xpath>
+        <value><duration>10</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="ReceivedAnAttack01"]/animationFrames/li[position()=3 or position()=10]/duration</xpath>
+        <value><duration>5</duration></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/FacialAnimation.FaceAnimationDef[defName="ReceivedAnAttack01"]/animationFrames/li/mouthShapeDef[.="surprise"]</xpath>
+        <value><mouthShapeDef>open</mouthShapeDef></value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

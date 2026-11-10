@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Reel's Facial Animation Textures</li>
+    </mods>
+    <match Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+      <settingName>enableExperimentalEyeTextures</settingName>
+      <operation Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationRemove">
+            <xpath>Defs/FacialAnimation.LidTypeDef[defName="LidStaredown" or defName="LidAwkward" or defName="LidIrritated" or defName="LidMoody" or defName="LidAnger" or defName="LidDisappointed" or defName="LidAndroid"]</xpath>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidStaredown</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Staredown</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidAwkward</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Awkward</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidIrritated</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Irritated</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidMoody</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Moody</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidAnger</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Anger</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidDisappointed</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Disappointed</texPath>
+                <probability>1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidAndroid</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Android</texPath>
+                <probability>0</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.EyeballTypeDef>
+                <defName>EyeAndroid</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Eyes/Android</texPath>
+                <probability>0</probability>
+                <shader>Map/Transparent</shader>
+                <minColor>RGB(0,0,0)</minColor>
+                <maxColor>RGB(0,0,0)</maxColor>
+              </FacialAnimation.EyeballTypeDef>
+            </value>
+          </li>
+        </operations>
+      </operation>
+    </match>
+  </Operation>
+</Patch>

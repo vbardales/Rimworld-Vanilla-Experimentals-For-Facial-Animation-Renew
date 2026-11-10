@@ -1,0 +1,32 @@
+# Development environments
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Claude Code session worktrees and local settings. A session creates its worktree in the
+# current directory, so sometimes inside this one, and each is a full copy of the repository.
+# Until this folder became a repository of its own the rule lived in the monorepo's .gitignore,
+# a file this repository does not carry.
+.claude/
+
+# Local asset-rendering dependencies
+
+# System.
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local Windows folder icons: a derived copy of Preview.png for the Explorer, never published.
+Art/*.ico
+
+# RimWorld converts every PNG to a .dds next to it the first time the game loads the mod.
+# Never tracked, and Steam must not ship them either.
+*.dds
+
+# Pickle's -EvidenceDir target. Proof kept on disk for the session that reads it, not in git:
+# screenshots and Player.log grow without limit. One text line per run goes in docs/runs/.
+Tests/Pickle/Evidence/
+evidence/
+Art/.render/

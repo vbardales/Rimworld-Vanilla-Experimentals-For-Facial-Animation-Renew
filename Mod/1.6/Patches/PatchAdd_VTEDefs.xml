@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Textures Expanded - [NL] Facial Animation</li>
+    </mods>
+    <match Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+      <settingName>enableExperimentalEyeTextures</settingName>
+      <operation Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/FacialAnimation.LidTypeDef[defName="LidQuite" or defName="LidPointy"]</xpath>
+            <match Class="PatchOperationRemove">
+              <xpath>Defs/FacialAnimation.LidTypeDef[defName="LidQuite" or defName="LidPointy"]</xpath>
+            </match>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidQuite</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Quite</texPath>
+                <probability>0.1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+              <FacialAnimation.LidTypeDef>
+                <defName>LidPointy</defName>
+                <texPath>Things/Pawn/VanillaExperimental/Lids/Pointy</texPath>
+                <probability>0.1</probability>
+                <shader>Map/Transparent</shader>
+              </FacialAnimation.LidTypeDef>
+            </value>
+          </li>
+        </operations>
+      </operation>
+    </match>
+  </Operation>
+</Patch>

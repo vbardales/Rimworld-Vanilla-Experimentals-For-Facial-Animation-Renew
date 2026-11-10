@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2026 Nelim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE OF THE ABOVE
+
+The MIT licence above covers only what the adaptation adds: the documentation,
+the packaging, and any change made to the original files for newer RimWorld
+versions.
+
+IT DOES NOT COVER THE ORIGINAL MOD. The textures, the patches, the assemblies,
+the settings and the idea are SunshineyDays' work, reused here:
+
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3753978140
+
+SunshineyDays never declared a licence for them, so none is granted here and
+none can be. They are redistributed under the usual practice for abandoned
+mods: explicit credit, a link to the original, and removal on request.
+
+If SunshineyDays asks for this to be taken down, it comes down. Immediately,
+and without discussion.
+
+ATTRIBUTION.md records what was taken and what was changed.

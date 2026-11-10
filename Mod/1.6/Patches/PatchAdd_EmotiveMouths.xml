@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+    <settingName>enableEmotiveMouths</settingName>
+    <operation Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <FacialAnimation.MouthTypeDef>
+          <defName>MouthSubtle</defName>
+          <texPath>Things/Pawn/Humanlike/Mouth/Subtle</texPath>
+          <shader>Map/Transparent</shader>
+        </FacialAnimation.MouthTypeDef>
+
+        <FacialAnimation.MouthTypeDef>
+          <defName>MouthLittle</defName>
+          <texPath>Things/Pawn/Humanlike/Mouth/Little</texPath>
+          <shader>Map/Transparent</shader>
+        </FacialAnimation.MouthTypeDef>
+
+  	<FacialAnimation.MouthTypeDef>
+		<defName>MouthEdnaLipsMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/EdnaLips</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsBigMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsBig</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsSimpleMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsSimple</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsSimpleSmileMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsSimpleSmile</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsSmallSmileMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsSmallSmile</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsSmirkMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsSmirk</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsTinySmileMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsTinySmile</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>MouthLipsWorriedMale</defName>
+		<texPath>Things/Pawn/Humanlike/Mouth/LipsWorried</texPath>
+		<shader>Map/Transparent</shader>
+    <gender>Male</gender>
+    <probability>0</probability>
+	</FacialAnimation.MouthTypeDef>
+
+      </value>
+    </operation>
+  </Operation>
+
+  <Operation Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+    <settingName>enableEmotiveMouths</settingName>
+    <operation Class="PatchOperationRemove">
+      <xpath>Defs/FacialAnimation.MouthTypeDef[defName="MouthHawk" or defName="MouthScowl"]/gender</xpath>
+    </operation>
+  </Operation>
+</Patch>

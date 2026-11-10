@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MVE_Settings_Category>Vanilla Experimentals for Facial Animation</MVE_Settings_Category>
+  <MVE_Settings_RestartRequiredLabel>{0} (restart required)</MVE_Settings_RestartRequiredLabel>
+  <MVE_Settings_PerformancePatchRestartNotice>Facial Animation Performance Patch is active. Setting changes won't apply until game restart.</MVE_Settings_PerformancePatchRestartNotice>
+
+  <MVE_Settings_ExperimentalEyeTextures_Label>Enable new eyeball and lid textures</MVE_Settings_ExperimentalEyeTextures_Label>
+  <MVE_Settings_ExperimentalEyeTextures_Tooltip>Use this mod's coordinated eyeball and lid textures for more natural blinking. Disable to use eye and lid definitions from Facial Animation texture mods, including the bundled VTE and Reel adjustments.</MVE_Settings_ExperimentalEyeTextures_Tooltip>
+
+  <MVE_Settings_EyeMovement_Label>Enable eye movement</MVE_Settings_EyeMovement_Label>
+  <MVE_Settings_EyeMovement_Tooltip>Animate eyeballs side to side within the new eye textures. Disabling keeps the coordinated textures and natural blinking while removing eyeball movement.</MVE_Settings_EyeMovement_Tooltip>
+
+  <MVE_Settings_RandomEyeColors_Label>Enable random eye colors</MVE_Settings_RandomEyeColors_Label>
+  <MVE_Settings_RandomEyeColors_Tooltip>Enable to allow Facial Animation's full-range random eye colors. Disable to keep default eyes black while preserving gene-defined colors.</MVE_Settings_RandomEyeColors_Tooltip>
+
+  <MVE_Settings_VanillaNarrowHeads_Label>Disable narrow head fix</MVE_Settings_VanillaNarrowHeads_Label>
+  <MVE_Settings_VanillaNarrowHeads_Tooltip>Enable RimWorld's narrow-head placement and mesh adjustments. Disable to make the six standard narrow head defs use average-head placement while preserving their names and graphics for compatibility, helping some textures appear in the correct place on heads.</MVE_Settings_VanillaNarrowHeads_Tooltip>
+
+  <MVE_Settings_MoreRetexturedHeads_Label>Enable More and Retextured Heads</MVE_Settings_MoreRetexturedHeads_Label>
+  <MVE_Settings_MoreRetexturedHeads_Tooltip>Add pointy chin for men and square chin for women. Heads are more vanilla-sized to look better with hair, apparel, and beards.</MVE_Settings_MoreRetexturedHeads_Tooltip>
+
+  <MVE_Settings_BlushLimiting_Label>Enable blush limiting</MVE_Settings_BlushLimiting_Label>
+  <MVE_Settings_BlushLimiting_Tooltip>Limit blushing by removing it from vanilla nudity trait and apparel-changing jobs. Ideology-specific uncovered-body reactions remain enabled.</MVE_Settings_BlushLimiting_Tooltip>
+
+  <MVE_Settings_HalfLiddedEyes_Label>Enable half-lidded eyes</MVE_Settings_HalfLiddedEyes_Label>
+  <MVE_Settings_HalfLiddedEyes_Tooltip>Use half-lidded eyes for tiredness and supported animations.</MVE_Settings_HalfLiddedEyes_Tooltip>
+
+  <MVE_Settings_Tears_Label>Enable tears</MVE_Settings_Tears_Label>
+  <MVE_Settings_Tears_Tooltip>Show tears when in high pain.</MVE_Settings_Tears_Tooltip>
+
+  <MVE_Settings_TemperatureOverlays_Label>Enable hot/cold overlays</MVE_Settings_TemperatureOverlays_Label>
+  <MVE_Settings_TemperatureOverlays_Tooltip>Show hot and cold facial overlays for temperature-related thoughts.</MVE_Settings_TemperatureOverlays_Tooltip>
+
+  <MVE_Settings_SickHotOverlay_Label>Show hot overlay for sick pawns</MVE_Settings_SickHotOverlay_Label>
+  <MVE_Settings_SickHotOverlay_Tooltip>Use the hot facial overlay for pawns with the Sick thought.</MVE_Settings_SickHotOverlay_Tooltip>
+
+  <MVE_Settings_EmotiveMouths_Label>Enable emotive mouths</MVE_Settings_EmotiveMouths_Label>
+  <MVE_Settings_EmotiveMouths_Tooltip>Use the additional smile and sad expressions.</MVE_Settings_EmotiveMouths_Tooltip>
+
+  <MVE_Settings_DisableGloomyFlee_Label>Disable gloomy overlay while fleeing</MVE_Settings_DisableGloomyFlee_Label>
+  <MVE_Settings_DisableGloomyFlee_Tooltip>Prevent fleeing and cowering jobs from forcing the gloomy facial overlay. Mood-based gloomy expressions can still appear.</MVE_Settings_DisableGloomyFlee_Tooltip>
+</LanguageData>

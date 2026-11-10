@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/FacialAnimation.MouthTypeDef/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Humanlike/Mouth/Blank</texPath>
+    </value>
+  </Operation>
+</Patch>

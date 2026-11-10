@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="MovingVanillaEyes.PatchOperationIfSettingTrue">
+    <settingName>enableExperimentalEyeTextures</settingName>
+    <operation Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.EyeballTypeDef[defName="EyeNormal" or defName="EyeSmall" or defName="EyeThin" or defName="EyeNone" or defName="BIGEYE"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/FacialAnimation.LidTypeDef[defName="LidNormal" or defName="LidCheerful" or defName="LidThick" or defName="LidShort" or defName="LidFlirty" or defName="LidFlashy" or defName="LidStuffed" or defName="LidAlmond" or defName="LidHardened" or defName="LidUnimpressed" or defName="LidSleepy" or defName="LidSquinting" or defName="LidSimple" or defName="LidNone" or defName="BIGEYE"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeNormal</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/Normal</texPath>
+              <probability>1</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(1,1,1)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeSmall</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/Small</texPath>
+              <probability>0.7</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(1,1,1)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeThin</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/Thin</texPath>
+              <probability>0.7</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(1,1,1)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeWide</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/Wide</texPath>
+              <probability>0.7</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(1,1,1)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeBig</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/Big</texPath>
+              <probability>0.5</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(1,1,1)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>EyeNone</defName>
+              <texPath>Blank</texPath>
+              <probability>0</probability>
+              <shader>Map/Transparent</shader>
+              <minColor>RGB(0,0,0)</minColor>
+              <maxColor>RGB(0,0,0)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.EyeballTypeDef>
+              <defName>BIGEYE</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Eyes/BIGEYE</texPath>
+              <probability>0</probability>
+              <shader>Map/CutoutComplex</shader>
+              <minColor>RGB(25,25,25)</minColor>
+              <maxColor>RGB(200,200,200)</maxColor>
+            </FacialAnimation.EyeballTypeDef>
+
+            <FacialAnimation.LidTypeDef>
+              <defName>LidNormal</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Normal</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidCheerful</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Cheerful</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidThick</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Thick</texPath>
+              <probability>0.5</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidShort</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Short</texPath>
+              <probability>0.5</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidFlirty</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Flashy</texPath>
+              <probability>0.5</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidFlashy</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Flashy</texPath>
+              <shader>Map/Transparent</shader>
+              <gender>Female</gender>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidStuffed</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Stuffed</texPath>
+              <probability>0.5</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidAlmond</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Almond</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidHardened</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Hardened</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidUnimpressed</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Sleepy</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidSleepy</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Sleepy</texPath>
+              <shader>Map/Transparent</shader>
+              <gender>Female</gender>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidSquinting</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Squinting</texPath>
+              <probability>1</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidSimple</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/Simple</texPath>
+              <probability>0.3</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>LidNone</defName>
+              <texPath>Blank</texPath>
+              <probability>0</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+            <FacialAnimation.LidTypeDef>
+              <defName>BIGEYE</defName>
+              <texPath>Things/Pawn/VanillaExperimental/Lids/BIGEYE</texPath>
+              <probability>0</probability>
+              <shader>Map/Transparent</shader>
+            </FacialAnimation.LidTypeDef>
+          </value>
+        </li>
+      </operations>
+    </operation>
+  </Operation>
+</Patch>
