@@ -17,7 +17,9 @@
 **No licence is declared**: the mod ships no `LICENSE` file and its description says nothing about
 reuse. It is republished as `silent` under the usual practice for abandoned mods: explicit credit,
 a link to the original, removal on request. That is stated in the mod's own description, not only
-here. Owner decision of 2026-11-10: the author counts as inactive, so the Renew is public.
+here. Owner decision of 2026-11-10, taken knowing that the author's GitHub account is active
+(a sibling mod, `sd.fa.geneticheadsframework`, MIT, last pushed 2026-08-06): the Renew is public.
+That MIT licence covers the sibling mod only, not this one.
 
 If SunshineyDays asks for this to come down, it comes down.
 
