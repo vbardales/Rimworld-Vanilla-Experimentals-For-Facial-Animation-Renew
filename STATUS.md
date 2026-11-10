@@ -18,7 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
-  - "2026-11-10: unverified: duplicate search (AUDIT 1.a, Search-Workshop.sh) not run, waits for the owner's yes (about 5 min of her plan)"
+  - "2026-11-10: 1.a duplicate search not run by this session: owner says the search was already done (SaB and Audit), no duplicate known"
   - "2026-11-10: unverified: GitHub repository not created, first push not done (1.e, 1.i), waits for the owner"
   - "2026-11-10: defect: on 1.7 `1.6/Patches/PatchBase_Experimentals_Parts.xml` fails (PatchOperationSequence of 17 operations dropped; its PatchOperationRemove of Defs/FacialAnimation.EyeballTypeDef[defName=EyeNormal]/altMaskPath fails; same set on 1.6 has no such error; evidence SanctuaryBacklot/Tests/Pickle/Inbox/fa17-load/stdout.txt line 1527). Fix later: success=Always or a PatchOperationConditional on the xpath; then a 1.7 ticket through the TM (map wsl-deps.sanctuary-fa17.map, scenario sanctuary-nelim-check, SaB files it). Do not declare 1.7 before a green 1.7 run"
   - "2026-11-10: unverified: no Mod/About/ModIcon.png and no Preview.png (the original's are not carried over; icon is the mascot, Preview comes at mountPreview)"
