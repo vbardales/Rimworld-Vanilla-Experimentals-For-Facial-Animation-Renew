@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MVE_Settings_Category>Vanilla Experimentals for Facial Animation</MVE_Settings_Category>
+  <MVE_Settings_RestartRequiredLabel>{0} (redémarrage nécessaire)</MVE_Settings_RestartRequiredLabel>
+  <MVE_Settings_PerformancePatchRestartNotice>Facial Animation Performance Patch est actif. Les changements de réglages ne s'appliquent qu'au prochain redémarrage du jeu.</MVE_Settings_PerformancePatchRestartNotice>
+
+  <MVE_Settings_ExperimentalEyeTextures_Label>Activer les nouvelles textures d'yeux et de paupières</MVE_Settings_ExperimentalEyeTextures_Label>
+  <MVE_Settings_ExperimentalEyeTextures_Tooltip>Utilise les textures d'yeux et de paupières coordonnées de ce mod, pour un clignement plus naturel. Désactivé, les définitions d'yeux et de paupières viennent des mods de textures de Facial Animation, ajustements VTE et Reel inclus.</MVE_Settings_ExperimentalEyeTextures_Tooltip>
+
+  <MVE_Settings_EyeMovement_Label>Activer le mouvement des yeux</MVE_Settings_EyeMovement_Label>
+  <MVE_Settings_EyeMovement_Tooltip>Anime les globes oculaires de gauche à droite dans les nouvelles textures d'yeux. Désactivé, les textures coordonnées et le clignement naturel restent, sans mouvement des globes oculaires.</MVE_Settings_EyeMovement_Tooltip>
+
+  <MVE_Settings_RandomEyeColors_Label>Activer les couleurs d'yeux aléatoires</MVE_Settings_RandomEyeColors_Label>
+  <MVE_Settings_RandomEyeColors_Tooltip>Activé, les couleurs d'yeux aléatoires de Facial Animation couvrent toute la gamme. Désactivé, les yeux restent noirs par défaut et les couleurs définies par les gènes sont conservées.</MVE_Settings_RandomEyeColors_Tooltip>
+
+  <MVE_Settings_VanillaNarrowHeads_Label>Désactiver la correction des têtes étroites</MVE_Settings_VanillaNarrowHeads_Label>
+  <MVE_Settings_VanillaNarrowHeads_Tooltip>Activé, les ajustements de placement et de maillage des têtes étroites de RimWorld s'appliquent. Désactivé, les six définitions de têtes étroites standard utilisent le placement d'une tête moyenne, en gardant leurs noms et leurs graphismes pour la compatibilité, ce qui aide certaines textures à apparaître au bon endroit sur les têtes.</MVE_Settings_VanillaNarrowHeads_Tooltip>
+
+  <MVE_Settings_MoreRetexturedHeads_Label>Activer les têtes supplémentaires et retexturées</MVE_Settings_MoreRetexturedHeads_Label>
+  <MVE_Settings_MoreRetexturedHeads_Tooltip>Ajoute un menton pointu pour les hommes et un menton carré pour les femmes. Les têtes ont une taille plus proche de la version de base, pour mieux s'accorder avec les cheveux, les vêtements et les barbes.</MVE_Settings_MoreRetexturedHeads_Tooltip>
+
+  <MVE_Settings_BlushLimiting_Label>Activer la limitation des rougissements</MVE_Settings_BlushLimiting_Label>
+  <MVE_Settings_BlushLimiting_Tooltip>Limite les rougissements en les retirant du trait de nudité de la version de base et des tâches de changement de vêtements. Les réactions d'Ideology à un corps découvert restent actives.</MVE_Settings_BlushLimiting_Tooltip>
+
+  <MVE_Settings_HalfLiddedEyes_Label>Activer les yeux mi-clos</MVE_Settings_HalfLiddedEyes_Label>
+  <MVE_Settings_HalfLiddedEyes_Tooltip>Utilise des yeux mi-clos pour la fatigue et les animations compatibles.</MVE_Settings_HalfLiddedEyes_Tooltip>
+
+  <MVE_Settings_Tears_Label>Activer les larmes</MVE_Settings_Tears_Label>
+  <MVE_Settings_Tears_Tooltip>Affiche des larmes en cas de forte douleur.</MVE_Settings_Tears_Tooltip>
+
+  <MVE_Settings_TemperatureOverlays_Label>Activer les effets de chaud et de froid</MVE_Settings_TemperatureOverlays_Label>
+  <MVE_Settings_TemperatureOverlays_Tooltip>Affiche des effets de chaud et de froid sur le visage pour les pensées liées à la température.</MVE_Settings_TemperatureOverlays_Tooltip>
+
+  <MVE_Settings_SickHotOverlay_Label>Afficher l'effet de chaud pour les colons malades</MVE_Settings_SickHotOverlay_Label>
+  <MVE_Settings_SickHotOverlay_Tooltip>Utilise l'effet de chaud sur le visage pour les colons qui ont la pensée « malade ».</MVE_Settings_SickHotOverlay_Tooltip>
+
+  <MVE_Settings_EmotiveMouths_Label>Activer les bouches expressives</MVE_Settings_EmotiveMouths_Label>
+  <MVE_Settings_EmotiveMouths_Tooltip>Utilise les expressions supplémentaires de sourire et de tristesse.</MVE_Settings_EmotiveMouths_Tooltip>
+
+  <MVE_Settings_DisableGloomyFlee_Label>Désactiver l'effet sombre pendant la fuite</MVE_Settings_DisableGloomyFlee_Label>
+  <MVE_Settings_DisableGloomyFlee_Tooltip>Empêche les tâches de fuite et de recroquevillement de forcer l'effet sombre sur le visage. Les expressions sombres liées à l'humeur peuvent toujours apparaître.</MVE_Settings_DisableGloomyFlee_Tooltip>
+</LanguageData>
