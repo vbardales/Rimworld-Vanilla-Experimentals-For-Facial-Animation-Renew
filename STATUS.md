@@ -26,7 +26,7 @@ remaining:
   - "2026-11-10: unverified: original ships an AssetBundle (Mod/AssetBundles, 7.8 MB); 1.7 has no AssetBundles (Assets.zip, -BakeModAssetPacks), to settle at the 1.7 pass; two DLLs without source (MovingVanillaEyes.dll, Mods/CharacterEditor/Assemblies/MoreHeadShapes.dll)"
   - "2026-11-10: defect: 5.d no hidden MainButtons shortcut (the original has no MainButtonDef; adding one needs C#, and the mod ships no source, only MovingVanillaEyes.dll). Needs a decision: new small assembly under Source/ or a justified exception, to ask Virginie at playTests"
   - "2026-11-10: unverified: 5.e/5.f in-game checks (defaults, dependent controls such as eye movement vs new eye textures, restart notice with the Performance Patch, persistence, logs): playTests; defaults not read from the DLL"
-  - "2026-11-10: unverified: 6.g French review by Virginie pending (TRANSLATION_REVIEW.md, 15 settings keys, French/Keyed/MovingVanillaEyes_Settings.xml); texts hard-coded in the DLL are unknown (no source), and no raw-key or clipping check before playTests"
+  - "2026-11-10: ChatGPT review applied (4 keys: effet de chaud became effet de chaleur; PUBLICATION.md not written yet, not reviewable). unverified: 6.g French review by Virginie pending (TRANSLATION_REVIEW.md, 15 settings keys, French/Keyed/MovingVanillaEyes_Settings.xml); texts hard-coded in the DLL are unknown (no source), and no raw-key or clipping check before playTests"
 session: local_aabdd426-e7d3-4243-a0ef-9934927042f9
 updated: 2026-11-10
 protocols_read_sha: f5c8838a968efde397966e68448ae0370d336d25

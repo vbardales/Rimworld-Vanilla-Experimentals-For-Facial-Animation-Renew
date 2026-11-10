@@ -28,11 +28,11 @@
   <MVE_Settings_Tears_Label>Activer les larmes</MVE_Settings_Tears_Label>
   <MVE_Settings_Tears_Tooltip>Affiche des larmes en cas de forte douleur.</MVE_Settings_Tears_Tooltip>
 
-  <MVE_Settings_TemperatureOverlays_Label>Activer les effets de chaud et de froid</MVE_Settings_TemperatureOverlays_Label>
-  <MVE_Settings_TemperatureOverlays_Tooltip>Affiche des effets de chaud et de froid sur le visage pour les pensées liées à la température.</MVE_Settings_TemperatureOverlays_Tooltip>
+  <MVE_Settings_TemperatureOverlays_Label>Activer les effets de chaleur et de froid</MVE_Settings_TemperatureOverlays_Label>
+  <MVE_Settings_TemperatureOverlays_Tooltip>Affiche des effets de chaleur et de froid sur le visage pour les pensées liées à la température.</MVE_Settings_TemperatureOverlays_Tooltip>
 
-  <MVE_Settings_SickHotOverlay_Label>Afficher l'effet de chaud pour les colons malades</MVE_Settings_SickHotOverlay_Label>
-  <MVE_Settings_SickHotOverlay_Tooltip>Utilise l'effet de chaud sur le visage pour les colons qui ont la pensée « malade ».</MVE_Settings_SickHotOverlay_Tooltip>
+  <MVE_Settings_SickHotOverlay_Label>Afficher l'effet de chaleur pour les colons malades</MVE_Settings_SickHotOverlay_Label>
+  <MVE_Settings_SickHotOverlay_Tooltip>Utilise l'effet de chaleur sur le visage pour les colons qui ont la pensée « malade ».</MVE_Settings_SickHotOverlay_Tooltip>
 
   <MVE_Settings_EmotiveMouths_Label>Activer les bouches expressives</MVE_Settings_EmotiveMouths_Label>
   <MVE_Settings_EmotiveMouths_Tooltip>Utilise les expressions supplémentaires de sourire et de tristesse.</MVE_Settings_EmotiveMouths_Tooltip>
