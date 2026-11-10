@@ -5,14 +5,14 @@ repo: Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew
 remote: https://github.com/vbardales/Rimworld-Vanilla-Experimentals-For-Facial-Animation-Renew.git
 visibility: public
 detached: yes
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence: silent
 licence_at: "2026-11-10: no licence file or mention in Workshop 3753978140 (SunshineyDays, modVersion 2.3.4, declares 1.6 only); owner decision: author counts as dead, so public with named credit and a withdrawal clause"
 upstream_mod_remotes: N/A
 settings_audit: partial
-localization: partial
-translation_en: partial
-translation_fr: partial
+localization: complete
+translation_en: complete
+translation_fr: complete
 dependencies: "2026-11-10 at code[1.0.0]: hard Harmony, [NL] Facial Animation (nals.facialanimation), [NL] Facial Animation - Experimentals (nals.facialanimationexperimentals), VTE - [NL] Facial Animation (vanillaexpanded.vtexe.facialanims), all kept as the author declared them (VTE is also read through a PatchOperationFindMod, so it may be softer than declared: author choice kept, no behaviour change); loadAfter order only: reel.facialanims (Reel textures patch via FindMod), lucius.eyegenes3 and oppey.eyegenes2 (EyeGenes patch via FindMod), ferny.nomouths (Mods/NoMouths IfModActive), sd.fa.geneticheadsanomaly; loadBefore astryl.FacialAnimationPerformancePatch; OptionalCompat.xml: void.charactereditor (patch, Mods/CharacterEditor IfModActive); incompatibleWith sd.fa.movingvanillaeyes (the original); no DLC; no animal, so ANIMALS.md n/a; load order cycle check not run (sort-load-order.py needs a Pickle staging)"
 workshop: none
 published: no
@@ -26,10 +26,10 @@ remaining:
   - "2026-11-10: unverified: original ships an AssetBundle (Mod/AssetBundles, 7.8 MB); 1.7 has no AssetBundles (Assets.zip, -BakeModAssetPacks), to settle at the 1.7 pass; two DLLs without source (MovingVanillaEyes.dll, Mods/CharacterEditor/Assemblies/MoreHeadShapes.dll)"
   - "2026-11-10: defect: 5.d no hidden MainButtons shortcut (the original has no MainButtonDef; adding one needs C#, and the mod ships no source, only MovingVanillaEyes.dll). Needs a decision: new small assembly under Source/ or a justified exception, to ask Virginie at playTests"
   - "2026-11-10: unverified: 5.e/5.f in-game checks (defaults, dependent controls such as eye movement vs new eye textures, restart notice with the Performance Patch, persistence, logs): playTests; defaults not read from the DLL"
-  - "2026-11-10: ChatGPT review applied (4 keys: effet de chaud became effet de chaleur; PUBLICATION.md not written yet, not reviewable). unverified: 6.g French review by Virginie pending (TRANSLATION_REVIEW.md, 15 settings keys, French/Keyed/MovingVanillaEyes_Settings.xml); texts hard-coded in the DLL are unknown (no source), and no raw-key or clipping check before playTests"
+  - "2026-11-10: ChatGPT review applied (4 keys: effet de chaud became effet de chaleur; PUBLICATION.md not written yet, not reviewable). 6.g French review validated by Virginie 2026-11-10 at 055987e. unverified: texts hard-coded in the DLL are unknown (no source), and no raw-key or clipping check before playTests"
 session: local_aabdd426-e7d3-4243-a0ef-9934927042f9
 updated: 2026-11-10
-protocols_read_sha: f5c8838a968efde397966e68448ae0370d336d25
+protocols_read_sha: 6ea7e656db3431b3945a03139af0d8a34cc1584d
 ---
 
 # Vanilla Experimentals for Facial Animation Renew (unofficial): status
@@ -50,4 +50,4 @@ Check it with `scripts/Check-Status.ps1 -Mod <Folder>` (no ERROR) before the com
 
 ## Translation audit
 
-2026-11-10. Texts shown to the player: the 15 `MVE_Settings_*` Keyed keys (settings page: category, restart label and notice, 12 options with label and tooltip). English is the original's `Languages/English/Keyed/MovingVanillaEyes_Settings.xml`. French is new: `Languages/French/Keyed/MovingVanillaEyes_Settings.xml`, written by this session, no tu, no vous, infinitive for labels, third person for tooltips. `Check-Translations.ps1`: PASS (0 DefInjected sources; it does not read the DLL). `TRANSLATION_REVIEW.md` generated. French not reviewed by Virginie: `translation_fr` stays `partial`, and the stage stays `localize` until she validates (AUDIT 6.g). Doubts to check at review: "têtes supplémentaires et retexturées" for "More and Retextured Heads", "effet sombre" for "gloomy overlay", "colons qui ont la pensée « malade »" for the Sick thought.
+2026-11-10. Texts shown to the player: the 15 `MVE_Settings_*` Keyed keys (settings page: category, restart label and notice, 12 options with label and tooltip). English is the original's `Languages/English/Keyed/MovingVanillaEyes_Settings.xml`. French is new: `Languages/French/Keyed/MovingVanillaEyes_Settings.xml`, written by this session, no tu, no vous, infinitive for labels, third person for tooltips. `Check-Translations.ps1`: PASS (0 DefInjected sources; it does not read the DLL). `TRANSLATION_REVIEW.md` generated. French reviewed and validated by Virginie on 2026-11-10 at revision 055987e, no correction (AUDIT 6.g); two ChatGPT passes applied (effet de chaleur). Doubts to check at review: "têtes supplémentaires et retexturées" for "More and Retextured Heads", "effet sombre" for "gloomy overlay", "colons qui ont la pensée « malade »" for the Sick thought.
